@@ -1,0 +1,6 @@
+/home/erick/Escritorio/practicas/sii-56965/workspace/build/CMakeFiles/edit_cache.dir
+/home/erick/Escritorio/practicas/sii-56965/workspace/build/CMakeFiles/rebuild_cache.dir
+/home/erick/Escritorio/practicas/sii-56965/workspace/build/src/CMakeFiles/tenis.dir
+/home/erick/Escritorio/practicas/sii-56965/workspace/build/src/CMakeFiles/logger.dir
+/home/erick/Escritorio/practicas/sii-56965/workspace/build/src/CMakeFiles/edit_cache.dir
+/home/erick/Escritorio/practicas/sii-56965/workspace/build/src/CMakeFiles/rebuild_cache.dir

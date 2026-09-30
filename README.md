@@ -1,4 +1,4 @@
-# Sistemas Informáticos Industriales
+# Sistemas Informáticos Industriales-Erick Mollinedo Lara
 
 ![UPM](https://img.shields.io/badge/UPM-ETSIDI-red)
 ![Curso](https://img.shields.io/badge/Curso-2026--2027-blue)

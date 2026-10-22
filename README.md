@@ -1,3 +1,4 @@
+#Erick Mollinedo Lara A408 56965
 # 🏓 Prácticas de Sistemas: Juego de Tenis 2D (C++, OpenGL & IPC)
 
 Repositorio correspondiente a las prácticas de la asignatura, donde se desarrolla un juego interactivo de tenis/pong bidimensional en C++ (OpenGL/FreeGLUT) y se amplía con una arquitectura de Comunicación Entre Procesos (IPC) mediante tuberías FIFO en Linux.

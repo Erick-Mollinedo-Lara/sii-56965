@@ -1,5 +1,5 @@
 #Erick Mollinedo Lara A408 56965
-# 🏓 Prácticas de Sistemas: Juego de Tenis 2D (C++, OpenGL & IPC)
+# Prácticas de Sistemas: Juego de Tenis 2D (C++, OpenGL & IPC)
 
 Repositorio correspondiente a las prácticas de la asignatura, donde se desarrolla un juego interactivo de tenis/pong bidimensional en C++ (OpenGL/FreeGLUT) y se amplía con una arquitectura de Comunicación Entre Procesos (IPC) mediante tuberías FIFO en Linux.
 
@@ -11,10 +11,10 @@ Repositorio correspondiente a las prácticas de la asignatura, donde se desarrol
 
 ## 🎮 PRÁCTICA 1: Dinámica, Física y Movimiento del Juego
 
-### 🎯 Objetivo
+###  Objetivo
 Desarrollar la lógica fundamental del juego en C++ y OpenGL: renderizado gráfico, control por teclado de las raquetas, cinemática de la pelota, detección de colisiones y conteo de tantos.
 
-### 🛠️ Tareas y Cambios Realizados
+###  Tareas y Cambios Realizados
 
 1. **Movimiento y control de las raquetas (`Raqueta.cpp` / `Raqueta.h`):**
    * Definición de las coordenadas de las paletas (`x1, y1` a `x2, y2`) para ambos jugadores.
@@ -32,12 +32,12 @@ Desarrollar la lógica fundamental del juego en C++ y OpenGL: renderizado gráfi
 
 ---
 
-## 📡 PRÁCTICA 2: Comunicación Entre Procesos (IPC) con FIFO
+## PRÁCTICA 2: Comunicación Entre Procesos (IPC) con FIFO
 
-### 🎯 Objetivo
+###  Objetivo
 Desacoplar la interfaz visual del registro de eventos mediante técnicas de concurrencia y **Comunicación Entre Procesos (IPC)** usando una tubería con nombre (**FIFO / Named Pipe**) en Linux.
 
-### 🛠️ Tareas y Cambios Realizados
+###  Tareas y Cambios Realizados
 
 1. **Creación del canal de comunicación (FIFO):**
    * Creación de un archivo especial de tubería con nombre en el sistema de archivos (`mkfifo`) para conectar dos procesos independientes sin compartir memoria directa.
@@ -63,7 +63,30 @@ Desacoplar la interfaz visual del registro de eventos mediante técnicas de conc
 
 ---
 
-## 🚀 Compilación y Ejecución
+## PRÁCTICA 3: Comunicación por Archivo Proyectado en Memoria (mmap) y Bot
+
+### Objetivo
+Implementar un mecanismo de Comunicación Entre Procesos (IPC) mediante proyección de archivos en memoria (`mmap`) en Linux para desarrollar un programa autónomo (`bot`) que controle la raqueta 1 de forma automática.
+
+### Tareas y Cambios Realizados
+
+1. **Definición de la estructura de memoria compartida (`DatosMemCompartida.h`):**
+   * Creación de la estructura en `include/` con los objetos `esfera`, `raqueta1` y la variable entera `accion` (1: arriba, -1: abajo, 0: quieto).
+   * Incorporación de directivas `#pragma once` en las cabeceras (`Raqueta.h` y `Esfera.h`) para evitar errores de redefinición de clases al incluirse en múltiples módulos.
+
+2. **Adaptación del juego `tenis` como Servidor de Memoria (`Mundo.cpp` / `Mundo.h`):**
+   * Declaración del atributo puntero a `DatosMemCompartida` en `Mundo.h` e inicialización segura a `NULL` en el constructor para evitar fallos de segmentación.
+   * En `Init()`: creación del archivo `/tmp/memoria_tenis` con `open()`, dimensionamiento exacto con `ftruncate()`, proyección en memoria virtual con `mmap()` y cierre del descriptor con `close()`.
+   * En `OnTimer()`: volcado en cada ciclo de las posiciones de la esfera y el jugador 1 en la memoria compartida, y lectura de la acción enviada por el bot para invocar `OnKeyboardDown` (`'w'` o `'s'`).
+
+3. **Desarrollo del proceso autónomo `bot` (`bot.cpp`):**
+   * Apertura y mapeo en memoria del mismo archivo proyectado creado por el juego (`open` y `mmap`).
+   * Implementación de un bucle periódico cada 25 ms (`usleep(25000)`): compara la coordenada Y de la pelota con la de la raqueta y establece la acción oportuna para interceptar la bola.
+
+4. **Integración en CMake (`CMakeLists.txt`):**
+   * Incorporación del nuevo ejecutable mediante `add_executable(bot ...)` junto a sus fuentes dependientes (`Plano.cpp`, `Vector2D.cpp`, `Esfera.cpp`, `Raqueta.cpp`) y enlace con las librerías `glut GL GLU`.
+
+##  Compilación y Ejecución
 
 ### 1. Compilación (CMake + Make)
 Ambos programas se compilan desde la carpeta `build`:

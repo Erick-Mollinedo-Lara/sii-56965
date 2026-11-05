@@ -4,7 +4,7 @@
 
 #if !defined(AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_)
 #define AFX_MUNDO_H__9510340A_3D75_485F_93DC_302A43B8039A__INCLUDED_
-
+#include "DatosMemCompartida.h"
 #include <vector>
 #include "Plano.h"
 
@@ -17,6 +17,10 @@
 
 class CMundo  
 {
+protected:
+
+DatosMemCompartida *memoriaCompartida;
+
 public:
 	void Init();
 	CMundo();

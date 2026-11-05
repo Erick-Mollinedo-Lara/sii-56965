@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/bot.dir/bot.cpp.o CMakeFiles/bot.dir/Esfera.cpp.o CMakeFiles/bot.dir/Raqueta.cpp.o CMakeFiles/bot.dir/Plano.cpp.o CMakeFiles/bot.dir/Vector2D.cpp.o -o ../bot  -lglut -lGL -lGLU 

@@ -142,6 +142,19 @@ logger/fast:
 	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/logger.dir/build.make src/CMakeFiles/logger.dir/build
 .PHONY : logger/fast
 
+#=============================================================================
+# Target rules for targets named bot
+
+# Build rule for target.
+bot: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 bot
+.PHONY : bot
+
+# fast build rule for target.
+bot/fast:
+	$(MAKE) $(MAKESILENT) -f src/CMakeFiles/bot.dir/build.make src/CMakeFiles/bot.dir/build
+.PHONY : bot/fast
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -150,6 +163,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... bot"
 	@echo "... logger"
 	@echo "... tenis"
 .PHONY : help

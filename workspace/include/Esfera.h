@@ -1,13 +1,13 @@
 // Esfera.h: interface for the Esfera class.
 //
 //////////////////////////////////////////////////////////////////////
-
+#pragma once
 #if !defined(AFX_ESFERA_H__8D520BAF_8208_423B_BD91_29F6687FB9C3__INCLUDED_)
 #define AFX_ESFERA_H__8D520BAF_8208_423B_BD91_29F6687FB9C3__INCLUDED_
 
 
 #if _MSC_VER > 1000
-#pragma once
+
 #endif // _MSC_VER > 1000
 
 #include "Vector2D.h"

@@ -4,7 +4,11 @@
 #include <fstream>
 #include "Mundo.h"
 #include "glut.h"
-
+#include <iostream>
+#include <sys/mman.h>
+#include <sys/stat.h>
+#include <fcntl.h>
+#include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -16,6 +20,7 @@
 
 CMundo::CMundo()
 {
+memoriaCompartida = NULL;
 	Init();
 }
 
@@ -114,7 +119,24 @@ void CMundo::OnDraw()
 }
 
 void CMundo::OnTimer(int value)
-{	
+{
+	if (memoriaCompartida != NULL && memoriaCompartida != MAP_FAILED) 
+	{
+		// 1. Enviamos al bot las posiciones actuales
+		memoriaCompartida->esfera = esfera;
+		memoriaCompartida->raqueta1 = jugador1;
+
+		// 2. Leemos la acción que decidió el bot y movemos la raqueta
+		if (memoriaCompartida->accion == 1) {
+			OnKeyboardDown('w', 0, 0); // Subir raqueta
+		} else if (memoriaCompartida->accion == -1) {
+			OnKeyboardDown('s', 0, 0); // Bajar raqueta
+		} else if (memoriaCompartida->accion == 0) {
+			jugador1.velocidad.y = 0;   // Detener raqueta
+		}
+	}
+	// =========================================================
+
 	jugador1.Mueve(0.025f);
 	jugador2.Mueve(0.025f);
 	esfera.Mueve(0.025f);
@@ -148,6 +170,7 @@ void CMundo::OnTimer(int value)
 
 }
 
+
 void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 {
 	switch(key)
@@ -164,6 +187,9 @@ void CMundo::OnKeyboardDown(unsigned char key, int x, int y)
 
 void CMundo::Init()
 {
+
+
+
 	Plano p;
 //pared inferior
 	p.x1=-7;p.y1=-5;
@@ -192,4 +218,28 @@ void CMundo::Init()
 	jugador2.g=0;
 	jugador2.x1=6;jugador2.y1=-1;
 	jugador2.x2=6;jugador2.y2=1;
+	
+	
+	    // --- CREACIÓN DE MEMORIA COMPARTIDA CON MMAP ---
+    int fd = open("/tmp/memoria_tenis", O_RDWR | O_CREAT | O_TRUNC, 0666);
+    if (fd != -1) {
+        ftruncate(fd, sizeof(DatosMemCompartida));
+        
+        // ¡OJO: Asignamos a this->memoriaCompartida (sin poner "DatosMemCompartida*" delante)!
+        this->memoriaCompartida = (DatosMemCompartida*) mmap(NULL, sizeof(DatosMemCompartida), 
+                                                             PROT_READ | PROT_WRITE, 
+                                                             MAP_SHARED, fd, 0);
+        close(fd);
+
+        if (this->memoriaCompartida != MAP_FAILED) {
+            this->memoriaCompartida->accion = 0;
+            std::cout << "Memoria compartida creada y proyectada con exito." << std::endl;
+        } else {
+            this->memoriaCompartida = NULL;
+            perror("Error en mmap");
+        }
+    } else {
+        perror("Error al abrir /tmp/memoria_tenis");
+    }
+	
 }

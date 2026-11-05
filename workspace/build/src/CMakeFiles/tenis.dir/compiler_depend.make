@@ -204,6 +204,7 @@ src/CMakeFiles/tenis.dir/Esfera.cpp.o: /home/erick/Escritorio/practicas/sii-5696
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h
 
 src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965/workspace/src/Mundo.cpp \
+  /home/erick/Escritorio/practicas/sii-56965/workspace/include/DatosMemCompartida.h \
   /home/erick/Escritorio/practicas/sii-56965/workspace/include/Esfera.h \
   /home/erick/Escritorio/practicas/sii-56965/workspace/include/Mundo.h \
   /home/erick/Escritorio/practicas/sii-56965/workspace/include/Plano.h \
@@ -214,7 +215,10 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/GL/glext.h \
   /usr/include/GL/glu.h \
   /usr/include/KHR/khrplatform.h \
+  /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
   /usr/include/aarch64-linux-gnu/asm/errno.h \
+  /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+  /usr/include/aarch64-linux-gnu/asm/types.h \
   /usr/include/aarch64-linux-gnu/bits/atomic_wide_counter.h \
   /usr/include/aarch64-linux-gnu/bits/byteswap.h \
   /usr/include/aarch64-linux-gnu/bits/confname.h \
@@ -241,6 +245,11 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h \
   /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h \
   /usr/include/aarch64-linux-gnu/bits/mathcalls.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h \
+  /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
+  /usr/include/aarch64-linux-gnu/bits/mman.h \
+  /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
   /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
   /usr/include/aarch64-linux-gnu/bits/pthread_stack_min-dynamic.h \
   /usr/include/aarch64-linux-gnu/bits/pthreadtypes-arch.h \
@@ -249,6 +258,8 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/aarch64-linux-gnu/bits/select.h \
   /usr/include/aarch64-linux-gnu/bits/setjmp.h \
   /usr/include/aarch64-linux-gnu/bits/stat.h \
+  /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
+  /usr/include/aarch64-linux-gnu/bits/statx.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-intn.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-least.h \
   /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
@@ -282,6 +293,8 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_itimerspec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
+  /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_timeval.h \
   /usr/include/aarch64-linux-gnu/bits/types/struct_tm.h \
@@ -312,12 +325,18 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/aarch64-linux-gnu/gnu/stubs-lp64.h \
   /usr/include/aarch64-linux-gnu/gnu/stubs.h \
   /usr/include/aarch64-linux-gnu/sys/cdefs.h \
+  /usr/include/aarch64-linux-gnu/sys/mman.h \
   /usr/include/aarch64-linux-gnu/sys/select.h \
   /usr/include/aarch64-linux-gnu/sys/single_threaded.h \
+  /usr/include/aarch64-linux-gnu/sys/stat.h \
   /usr/include/aarch64-linux-gnu/sys/types.h \
   /usr/include/alloca.h \
+  /usr/include/asm-generic/bitsperlong.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
+  /usr/include/asm-generic/int-ll64.h \
+  /usr/include/asm-generic/posix_types.h \
+  /usr/include/asm-generic/types.h \
   /usr/include/c++/13/backward/binders.h \
   /usr/include/c++/13/bit \
   /usr/include/c++/13/bits/alloc_traits.h \
@@ -402,6 +421,7 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/c++/13/initializer_list \
   /usr/include/c++/13/ios \
   /usr/include/c++/13/iosfwd \
+  /usr/include/c++/13/iostream \
   /usr/include/c++/13/istream \
   /usr/include/c++/13/limits \
   /usr/include/c++/13/math.h \
@@ -439,6 +459,10 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
   /usr/include/linux/falloc.h \
+  /usr/include/linux/posix_types.h \
+  /usr/include/linux/stat.h \
+  /usr/include/linux/stddef.h \
+  /usr/include/linux/types.h \
   /usr/include/locale.h \
   /usr/include/math.h \
   /usr/include/pthread.h \
@@ -1100,6 +1124,7 @@ src/CMakeFiles/tenis.dir/Vector2D.cpp.o: /home/erick/Escritorio/practicas/sii-56
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stddef.h
 
 src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965/workspace/src/tenis.cpp \
+  /home/erick/Escritorio/practicas/sii-56965/workspace/include/DatosMemCompartida.h \
   /home/erick/Escritorio/practicas/sii-56965/workspace/include/Esfera.h \
   /home/erick/Escritorio/practicas/sii-56965/workspace/include/Mundo.h \
   /home/erick/Escritorio/practicas/sii-56965/workspace/include/Plano.h \
@@ -1310,6 +1335,44 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
   /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h
 
 
+/home/erick/Escritorio/practicas/sii-56965/workspace/src/Raqueta.cpp:
+
+/home/erick/Escritorio/practicas/sii-56965/workspace/src/Plano.cpp:
+
+/usr/include/unistd.h:
+
+/usr/include/strings.h:
+
+/usr/include/string.h:
+
+/usr/include/math.h:
+
+/usr/include/linux/types.h:
+
+/usr/include/linux/stddef.h:
+
+/usr/include/linux/falloc.h:
+
+/usr/include/linux/close_range.h:
+
+/usr/include/fcntl.h:
+
+/usr/include/c++/13/tr1/special_function_util.h:
+
+/usr/include/c++/13/tr1/riemann_zeta.tcc:
+
+/usr/include/c++/13/tr1/poly_hermite.tcc:
+
+/usr/include/c++/13/tr1/modified_bessel_func.tcc:
+
+/usr/include/c++/13/tr1/legendre_function.tcc:
+
+/usr/include/c++/13/tr1/gamma.tcc:
+
+/usr/include/c++/13/tr1/exp_integral.tcc:
+
+/usr/include/linux/stat.h:
+
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/locale_facets.h:
@@ -1332,11 +1395,11 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/bits/alloc_traits.h:
 
+/usr/include/aarch64-linux-gnu/sys/mman.h:
+
 /usr/include/c++/13/bits/codecvt.h:
 
 /usr/include/c++/13/bits/basic_string.h:
-
-/usr/include/c++/13/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/13/bits/basic_ios.h:
 
@@ -1376,9 +1439,9 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h:
 
-/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
+/usr/include/aarch64-linux-gnu/bits/statx.h:
 
-/usr/include/linux/close_range.h:
+/usr/include/aarch64-linux-gnu/c++/13/bits/ctype_inline.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/ctype_base.h:
 
@@ -1400,10 +1463,6 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h:
 
-/usr/include/c++/13/streambuf:
-
-/usr/include/c++/13/bits/memory_resource.h:
-
 /usr/include/wchar.h:
 
 /usr/include/c++/13/bits/invoke.h:
@@ -1411,6 +1470,8 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 /home/erick/Escritorio/practicas/sii-56965/workspace/include/glut.h:
 
 /usr/include/aarch64-linux-gnu/bits/environments.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h:
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/c++config.h:
 
@@ -1432,8 +1493,6 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/bits/exception_defines.h:
 
-/usr/include/math.h:
-
 /usr/include/aarch64-linux-gnu/bits/waitstatus.h:
 
 /usr/include/aarch64-linux-gnu/bits/wchar.h:
@@ -1454,8 +1513,6 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/aarch64-linux-gnu/bits/iscanonical.h:
 
-/usr/include/fcntl.h:
-
 /usr/include/c++/13/bits/ostream_insert.h:
 
 /usr/include/c++/13/math.h:
@@ -1470,11 +1527,21 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/aarch64-linux-gnu/c++/13/bits/error_constants.h:
 
+/usr/include/c++/13/tr1/poly_laguerre.tcc:
+
+/usr/include/aarch64-linux-gnu/bits/mman-linux.h:
+
+/usr/include/aarch64-linux-gnu/bits/mman_ext.h:
+
 /usr/include/aarch64-linux-gnu/bits/types/sigset_t.h:
 
 /usr/include/aarch64-linux-gnu/bits/stdint-least.h:
 
 /usr/include/c++/13/exception:
+
+/usr/include/c++/13/vector:
+
+/usr/include/aarch64-linux-gnu/bits/long-double.h:
 
 /usr/include/aarch64-linux-gnu/bits/libc-header-start.h:
 
@@ -1482,9 +1549,13 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/aarch64-linux-gnu/bits/types/timer_t.h:
 
+/usr/include/asm-generic/int-ll64.h:
+
 /usr/include/aarch64-linux-gnu/bits/errno.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/aarch64-linux-gnu/bits/statx-generic.h:
 
 /usr/include/aarch64-linux-gnu/bits/pthreadtypes.h:
 
@@ -1536,13 +1607,27 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/GL/gl.h:
 
+/usr/include/c++/13/streambuf:
+
+/usr/include/c++/13/bits/memory_resource.h:
+
+/usr/include/aarch64-linux-gnu/bits/mman-shared.h:
+
+/usr/include/aarch64-linux-gnu/asm/posix_types.h:
+
 /usr/include/aarch64-linux-gnu/bits/setjmp.h:
 
 /usr/include/c++/13/bits/char_traits.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/struct_timespec.h:
 
+/usr/include/aarch64-linux-gnu/asm/bitsperlong.h:
+
 /usr/include/aarch64-linux-gnu/bits/mathcalls.h:
+
+/usr/include/c++/13/tr1/hypergeometric.tcc:
+
+/usr/include/c++/13/bits/range_access.h:
 
 /usr/include/c++/13/system_error:
 
@@ -1642,10 +1727,6 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/type_traits:
 
-/usr/include/c++/13/bits/range_access.h:
-
-/usr/include/c++/13/tr1/hypergeometric.tcc:
-
 /usr/include/c++/13/bits/hash_bytes.h:
 
 /usr/include/aarch64-linux-gnu/bits/types/error_t.h:
@@ -1664,6 +1745,8 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/bits/postypes.h:
 
+/usr/include/aarch64-linux-gnu/asm/types.h:
+
 /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h:
 
 /usr/include/c++/13/bits/std_abs.h:
@@ -1677,6 +1760,8 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 /usr/include/aarch64-linux-gnu/bits/types/locale_t.h:
 
 /usr/include/c++/13/iosfwd:
+
+/usr/include/linux/posix_types.h:
 
 /usr/include/c++/13/bits/ptr_traits.h:
 
@@ -1702,19 +1787,23 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/bits/streambuf_iterator.h:
 
-/usr/include/c++/13/ostream:
+/usr/include/aarch64-linux-gnu/bits/mman.h:
 
-/usr/include/c++/13/tr1/riemann_zeta.tcc:
+/usr/include/c++/13/ostream:
 
 /usr/include/c++/13/bits/string_view.tcc:
 
 /usr/include/c++/13/bits/stringfwd.h:
 
+/usr/include/aarch64-linux-gnu/sys/stat.h:
+
 /usr/include/c++/13/cctype:
 
 /usr/include/c++/13/ext/atomicity.h:
 
-/usr/include/c++/13/tr1/gamma.tcc:
+/usr/include/asm-generic/types.h:
+
+/usr/include/asm-generic/bitsperlong.h:
 
 /usr/include/c++/13/cerrno:
 
@@ -1726,8 +1815,6 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/cwctype:
 
-/home/erick/Escritorio/practicas/sii-56965/workspace/src/Plano.cpp:
-
 /usr/include/c++/13/debug/assertions.h:
 
 /usr/include/linux/errno.h:
@@ -1735,6 +1822,8 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 /usr/include/c++/13/debug/debug.h:
 
 /usr/include/c++/13/ext/string_conversions.h:
+
+/home/erick/Escritorio/practicas/sii-56965/workspace/include/DatosMemCompartida.h:
 
 /usr/include/c++/13/ext/type_traits.h:
 
@@ -1760,7 +1849,7 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/stdc-predef.h:
 
-/usr/include/c++/13/tr1/special_function_util.h:
+/usr/include/asm-generic/posix_types.h:
 
 /usr/include/c++/13/bits/stl_iterator_base_types.h:
 
@@ -1784,11 +1873,13 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/aarch64-linux-gnu/bits/mathcalls-helper-functions.h:
 
-/usr/include/c++/13/tr1/poly_hermite.tcc:
-
 /usr/include/aarch64-linux-gnu/bits/mathcalls-narrow.h:
 
+/usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h:
+
 /usr/include/aarch64-linux-gnu/bits/stat.h:
+
+/usr/include/aarch64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
@@ -1798,6 +1889,8 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 
 /usr/include/c++/13/cmath:
 
+/usr/include/c++/13/iostream:
+
 /usr/include/aarch64-linux-gnu/bits/getopt_core.h:
 
 /usr/include/c++/13/limits:
@@ -1805,23 +1898,3 @@ src/CMakeFiles/tenis.dir/tenis.cpp.o: /home/erick/Escritorio/practicas/sii-56965
 /usr/include/c++/13/stdlib.h:
 
 /usr/include/c++/13/tr1/ell_integral.tcc:
-
-/usr/include/c++/13/tr1/exp_integral.tcc:
-
-/usr/include/c++/13/tr1/legendre_function.tcc:
-
-/usr/include/c++/13/tr1/modified_bessel_func.tcc:
-
-/usr/include/aarch64-linux-gnu/bits/long-double.h:
-
-/usr/include/c++/13/vector:
-
-/usr/include/linux/falloc.h:
-
-/usr/include/string.h:
-
-/usr/include/strings.h:
-
-/usr/include/unistd.h:
-
-/home/erick/Escritorio/practicas/sii-56965/workspace/src/Raqueta.cpp:

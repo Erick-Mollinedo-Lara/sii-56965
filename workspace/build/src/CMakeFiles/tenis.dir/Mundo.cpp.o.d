@@ -155,22 +155,53 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: \
  /usr/include/aarch64-linux-gnu/c++/13/bits/c++io.h \
  /usr/include/c++/13/bits/fstream.tcc \
  /home/erick/Escritorio/practicas/sii-56965/workspace/include/Mundo.h \
+ /home/erick/Escritorio/practicas/sii-56965/workspace/include/DatosMemCompartida.h \
+ /home/erick/Escritorio/practicas/sii-56965/workspace/include/Esfera.h \
+ /home/erick/Escritorio/practicas/sii-56965/workspace/include/Vector2D.h \
+ /home/erick/Escritorio/practicas/sii-56965/workspace/include/Raqueta.h \
+ /home/erick/Escritorio/practicas/sii-56965/workspace/include/Plano.h \
  /usr/include/c++/13/vector /usr/include/c++/13/bits/stl_uninitialized.h \
  /usr/include/c++/13/bits/stl_vector.h \
  /usr/include/c++/13/bits/stl_bvector.h \
  /usr/include/c++/13/bits/vector.tcc \
- /home/erick/Escritorio/practicas/sii-56965/workspace/include/Plano.h \
- /home/erick/Escritorio/practicas/sii-56965/workspace/include/Esfera.h \
- /home/erick/Escritorio/practicas/sii-56965/workspace/include/Vector2D.h \
- /home/erick/Escritorio/practicas/sii-56965/workspace/include/Raqueta.h \
  /home/erick/Escritorio/practicas/sii-56965/workspace/include/glut.h \
  /usr/include/GL/gl.h /usr/include/GL/glext.h \
  /usr/include/KHR/khrplatform.h \
  /usr/lib/gcc/aarch64-linux-gnu/13/include/stdint.h /usr/include/stdint.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-uintn.h \
  /usr/include/aarch64-linux-gnu/bits/stdint-least.h /usr/include/GL/glu.h \
- /usr/include/c++/13/stdlib.h /usr/include/string.h \
- /usr/include/strings.h /usr/include/c++/13/math.h \
+ /usr/include/c++/13/iostream /usr/include/aarch64-linux-gnu/sys/mman.h \
+ /usr/include/aarch64-linux-gnu/bits/mman.h \
+ /usr/include/aarch64-linux-gnu/bits/mman-map-flags-generic.h \
+ /usr/include/aarch64-linux-gnu/bits/mman-linux.h \
+ /usr/include/aarch64-linux-gnu/bits/mman-shared.h \
+ /usr/include/aarch64-linux-gnu/bits/mman_ext.h \
+ /usr/include/aarch64-linux-gnu/sys/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/stat.h \
+ /usr/include/aarch64-linux-gnu/bits/struct_stat.h \
+ /usr/include/aarch64-linux-gnu/bits/statx.h /usr/include/linux/stat.h \
+ /usr/include/linux/types.h /usr/include/aarch64-linux-gnu/asm/types.h \
+ /usr/include/asm-generic/types.h /usr/include/asm-generic/int-ll64.h \
+ /usr/include/aarch64-linux-gnu/asm/bitsperlong.h \
+ /usr/include/asm-generic/bitsperlong.h /usr/include/linux/posix_types.h \
+ /usr/include/linux/stddef.h \
+ /usr/include/aarch64-linux-gnu/asm/posix_types.h \
+ /usr/include/asm-generic/posix_types.h \
+ /usr/include/aarch64-linux-gnu/bits/statx-generic.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_statx_timestamp.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_statx.h \
+ /usr/include/fcntl.h /usr/include/aarch64-linux-gnu/bits/fcntl.h \
+ /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
+ /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
+ /usr/include/linux/falloc.h /usr/include/unistd.h \
+ /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
+ /usr/include/aarch64-linux-gnu/bits/environments.h \
+ /usr/include/aarch64-linux-gnu/bits/confname.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
+ /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
+ /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
+ /usr/include/linux/close_range.h /usr/include/c++/13/stdlib.h \
+ /usr/include/string.h /usr/include/strings.h /usr/include/c++/13/math.h \
  /usr/include/c++/13/cmath /usr/include/math.h \
  /usr/include/aarch64-linux-gnu/bits/math-vector.h \
  /usr/include/aarch64-linux-gnu/bits/libm-simd-decl-stubs.h \
@@ -193,16 +224,4 @@ src/CMakeFiles/tenis.dir/Mundo.cpp.o: \
  /usr/include/c++/13/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13/tr1/poly_hermite.tcc \
  /usr/include/c++/13/tr1/poly_laguerre.tcc \
- /usr/include/c++/13/tr1/riemann_zeta.tcc /usr/include/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl.h \
- /usr/include/aarch64-linux-gnu/bits/fcntl-linux.h \
- /usr/include/aarch64-linux-gnu/bits/types/struct_iovec.h \
- /usr/include/linux/falloc.h /usr/include/aarch64-linux-gnu/bits/stat.h \
- /usr/include/aarch64-linux-gnu/bits/struct_stat.h /usr/include/unistd.h \
- /usr/include/aarch64-linux-gnu/bits/posix_opt.h \
- /usr/include/aarch64-linux-gnu/bits/environments.h \
- /usr/include/aarch64-linux-gnu/bits/confname.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_posix.h \
- /usr/include/aarch64-linux-gnu/bits/getopt_core.h \
- /usr/include/aarch64-linux-gnu/bits/unistd_ext.h \
- /usr/include/linux/close_range.h
+ /usr/include/c++/13/tr1/riemann_zeta.tcc

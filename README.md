@@ -5,11 +5,11 @@ Repositorio correspondiente a las prácticas de la asignatura, donde se desarrol
 
 ---
 
-## 📋 Estructura de las Prácticas
+## Estructura de las Prácticas
 
 ---
 
-## 🎮 PRÁCTICA 1: Dinámica, Física y Movimiento del Juego
+##  PRÁCTICA 1: Dinámica, Física y Movimiento del Juego
 
 ###  Objetivo
 Desarrollar la lógica fundamental del juego en C++ y OpenGL: renderizado gráfico, control por teclado de las raquetas, cinemática de la pelota, detección de colisiones y conteo de tantos.
